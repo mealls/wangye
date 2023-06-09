@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Studio Code 做的网页主页</title>
+    <style>
+        .a {
+            color: rgb(0, 150, 255);
+            user-select: none;
+        }
+        
+        .b {
+            color: rgb(0, 0, 0, 0);
+            user-select: none;
+        }
+        
+        .c {
+            height: 500px;
+            user-select: none;
+        }
+        
+        .d {
+            color: rgb(0, 190, 255);
+            user-select: none;
+        }
+        
+        .e {
+            color: rgb(0, 140, 255);
+            user-select: none;
+        }
+        
+        .h1z1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            user-select: none;
+            color: rgb(0, 190, 255);
+            width: 425px;
+        }
+        
+        .h2z {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            user-select: none;
+            color: rgb(0, 190, 255);
+            width: 500px;
+        }
+        
+        .h3z1 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            user-select: none;
+            color: rgb(0, 190, 255);
+            width: 342px;
+        }
+        
+        .h3z2 {
+            display: block;
+            font-size: 1.17em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            user-select: none;
+            color: rgb(0, 190, 255);
+            width: 211px;
+        }
+        
+        #musicplayer1 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer2 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer3 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer4 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer5 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer6 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer7 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer8 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer9 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer10 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer11 {
+            position: absolute;
+            left: -9999px;
+        }
+        
+        #musicplayer12 {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
+</head>
+
+<body style="margin: 100px;">
+    <script>
+        //禁用右键（防止右键查看源代码） 
+        window.oncontextmenu = function() {
+                return false;
+            }
+            //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+        window.onkeydown = window.onkeyup = window.onkeypress = function() {
+                window.event.returnValue = false;
+                return false;
+            }
+            //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
+        var h = window.innerHeight,
+            w = window.innerWidth;
+        window.onresize = function() {
+            if (h != window.innerHeight || w != window.innerWidth) {
+                window.close();
+                window.location = "about:blank";
+            }
+        }
+    </script>
+    <div class="b">ZZCM(16jz):E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 SM:E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 12345wjsxx
+    </div>
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <h1 class="d"> 你好，欢迎来到 Visual Studio Code 做的网页主页</h1>
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <p class="a">哈哈</p>
+    <p class="a">第一次做网页，好紧张</p>
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <p class="a"> 制作者 bilibili 主页链接:<a class="e" href="https://space.bilibili.com/1532090388?spm_id_from=333.1007.0.0">https://space.bilibili.com/1532090388?spm_id_from=333.1007.0.0</a>
+        <div class="b">ZZCM(16jz):E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 SM:E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 12345wjsxx</div>
+        <img class="c" draggable="false" src="tp\wdtx.png">
+    </p>
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <h1>
+        <a class="d" href="Visual Studio Code 做的网页第一页.html">第一页</a>
+    </h1>
+    <div class="b">ZZCM(16jz):E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 SM:E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 12345wjsxx</div>
+    <h1>
+        <a class="d" href="Visual Studio Code 做的网页第二页.html">第二页</a>
+    </h1>
+    <div class="b">ZZCM(16jz):E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 SM:E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 12345wjsxx</div>
+    <h1>
+        <a class="d" href="Visual Studio Code 做的网页第三页.html">第三页</a>
+    </h1>
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <details>
+        <summary class="h1z1">
+            休闲区(点击显示/隐藏休闲区)
+        </summary>
+        <h2>
+            <div class="a">————————————————————————————————</div>
+        </h2>
+        <details>
+            <summary class="h3z1">
+                点一次就加一(点击显示/隐藏点击数)
+            </summary>
+            <h4 class="a">
+                点击数<button id="dianjishu" onclick="dianji()" class="d">0</button>
+                <script>
+                    function dianji() {
+                        let dianjishubiaoqian = window.document.getElementById('dianjishu');
+                        let dianjishu = parseInt(dianjishubiaoqian.innerText);
+                        let xinshuzi = dianjishu + 1;
+                        dianjishubiaoqian.innerText = xinshuzi;
+                        return
+                    }
+                </script>
+            </h4>
+        </details>
+        <h2>
+            <div class="a">————————————————————————————————</div>
+        </h2>
+        <details>
+            <summary class="h3z2">
+                歌单(点击显示/隐藏音乐)
+            </summary>
+            <button id="playButton1" class="d">1.糯米Nomi - 调查中-《开端》bgm歌词版</button>
+            <audio id="musicplayer1" src="yy\糯米Nomi - 调查中-《开端》bgm歌词版.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton2" class="d">2.三无MarBlue - 病名は愛だった（Cover 鏡音リン ／ 鏡音レン）</button>
+            <audio id="musicplayer2" src="yy\三无MarBlue - 病名は愛だった（Cover 鏡音リン ／ 鏡音レン）.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton3" class="d">3.大课间跑步音乐</button>
+            <audio id="musicplayer3" src="\大课间跑步音乐.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton4" class="d">4.三无MarBlue - 〇（cover 洛天依）</button>
+            <audio id="musicplayer4" src="yy\三无MarBlue - 〇（cover 洛天依）.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton5" class="d">5.爱不会绝迹</button>
+            <audio id="musicplayer5" src="yy\爱不会绝迹.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton6" class="d">6.爱人错过（0.8x）</button>
+            <audio id="musicplayer6" src="yy\爱人错过（0.8x）.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton7" class="d">7.Lemon</button>
+            <audio id="musicplayer7" src="yy\Lemon.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton8" class="d">8.Loser</button>
+            <audio id="musicplayer8" src="yy\Loser.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton9" class="d">9.AIR STARS - 玫瑰少年</button>
+            <audio id="musicplayer9" src="yy\AIR STARS - 玫瑰少年迹.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton10" class="d">10.S.T.A.Y. (Delta Heavy Tribute)</button>
+            <audio id="musicplayer10" src="yy\S.T.A.Y. (Delta Heavy Tribute).flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton11" class="d">11.梦心 - lifeline</button>
+            <audio id="musicplayer11" src="yy\梦心 - lifeline.flac" controls></audio>
+            <div class="b">www.wwww.www</div>
+            <button id="playButton12" class="d">12.约定</button>
+            <audio id="musicplayer12" src="yy\约定.flac" controls></audio>
+            <script>
+                //创建变量1
+                var playButton1 = document.getElementById('playButton1');
+                var musicplayer1 = document.getElementById('musicplayer1');
+
+                var playButton2 = document.getElementById('playButton2');
+                var musicplayer2 = document.getElementById('musicplayer2');
+
+                var playButton3 = document.getElementById('playButton3');
+                var musicplayer3 = document.getElementById('musicplayer3');
+
+                var playButton4 = document.getElementById('playButton4');
+                var musicplayer4 = document.getElementById('musicplayer4');
+
+                var playButton5 = document.getElementById('playButton5');
+                var musicplayer5 = document.getElementById('musicplayer5');
+
+                var playButton6 = document.getElementById('playButton6');
+                var musicplayer6 = document.getElementById('musicplayer6');
+
+                var playButton7 = document.getElementById('playButton7');
+                var musicplayer7 = document.getElementById('musicplayer7');
+
+                var playButton8 = document.getElementById('playButton8');
+                var musicplayer8 = document.getElementById('musicplayer8');
+
+                var playButton5 = document.getElementById('playButton9');
+                var musicplayer5 = document.getElementById('musicplayer9');
+
+                var playButton6 = document.getElementById('playButton10');
+                var musicplayer6 = document.getElementById('musicplayer10');
+
+                var playButton7 = document.getElementById('playButton11');
+                var musicplayer7 = document.getElementById('musicplayer11');
+
+                var playButton8 = document.getElementById('playButton12');
+                var musicplayer8 = document.getElementById('musicplayer12');
+                //创建变量2
+                function stopAllMusic() {
+                    musicplayer1.pause();
+                    musicplayer2.pause();
+                    musicplayer3.pause();
+                    musicplayer4.pause();
+                    musicplayer5.pause();
+                    musicplayer6.pause();
+                    musicplayer7.pause();
+                    musicplayer8.pause();
+                    musicplayer9.pause();
+                    musicplayer10.pause();
+                    musicplayer11.pause();
+                    musicplayer12.pause();
+                }
+                //换歌
+                playButton1.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer1.paused) {
+                        musicplayer1.play();
+                    } else {
+                        musicplayer1.pause();
+                    }
+                });
+
+                playButton2.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer2.paused) {
+                        musicplayer2.play();
+                    } else {
+                        musicplayer2.pause();
+                    }
+                });
+
+                playButton3.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer3.paused) {
+                        musicplayer3.play();
+                    } else {
+                        musicplayer3.pause();
+                    }
+                });
+
+                playButton4.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer4.paused) {
+                        musicplayer4.play();
+                    } else {
+                        musicplayer4.pause();
+                    }
+                });
+
+                playButton5.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer5.paused) {
+                        musicplayer5.play();
+                    } else {
+                        musicplayer5.pause();
+                    }
+                });
+
+                playButton6.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer6.paused) {
+                        musicplayer6.play();
+                    } else {
+                        musicplayer6.pause();
+                    }
+                });
+
+                playButton7.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer7.paused) {
+                        musicplayer7.play();
+                    } else {
+                        musicplayer7.pause();
+                    }
+                });
+
+                playButton8.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer8.paused) {
+                        musicplayer8.play();
+                    } else {
+                        musicplayer8.pause();
+                    }
+                });
+
+                playButton9.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer9.paused) {
+                        musicplayer9.play();
+                    } else {
+                        musicplayer9.pause();
+                    }
+                });
+
+                playButton10.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer10.paused) {
+                        musicplayer10.play();
+                    } else {
+                        musicplayer10.pause();
+                    }
+                });
+
+                playButton11.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer11.paused) {
+                        musicplayer11.play();
+                    } else {
+                        musicplayer11.pause();
+                    }
+                });
+
+                playButton12.addEventListener('click', function() {
+                    stopAllMusic();
+                    if (musicplayer12.paused) {
+                        musicplayer12.play();
+                    } else {
+                        musicplayer12.pause();
+                    }
+                });
+                //循环
+                musicplayer1.addEventListener('ended', function() {
+                    musicplayer1.currentTime = 0;
+                    musicplayer1.play();
+                });
+
+                musicplayer2.addEventListener('ended', function() {
+                    musicplayer2.currentTime = 0;
+                    musicplayer2.play();
+                });
+
+                musicplayer3.addEventListener('ended', function() {
+                    musicplayer3.currentTime = 0;
+                    musicplayer3.play();
+                });
+
+                musicplayer4.addEventListener('ended', function() {
+                    musicplayer4.currentTime = 0;
+                    musicplayer4.play();
+                });
+
+                musicplayer5.addEventListener('ended', function() {
+                    musicplayer5.currentTime = 0;
+                    musicplayer5.play();
+                });
+
+                musicplayer6.addEventListener('ended', function() {
+                    musicplayer6.currentTime = 0;
+                    musicplayer6.play();
+                });
+
+                musicplayer7.addEventListener('ended', function() {
+                    musicplayer7.currentTime = 0;
+                    musicplayer7.play();
+                });
+
+                musicplayer8.addEventListener('ended', function() {
+                    musicplayer8.currentTime = 0;
+                    musicplayer8.play();
+                });
+
+                musicplayer9.addEventListener('ended', function() {
+                    musicplayer9.currentTime = 0;
+                    musicplayer9.play();
+                });
+
+                musicplayer10.addEventListener('ended', function() {
+                    musicplayer10.currentTime = 0;
+                    musicplayer10.play();
+                });
+
+                musicplayer11.addEventListener('ended', function() {
+                    musicplayer11.currentTime = 0;
+                    musicplayer11.play();
+                });
+
+                musicplayer12.addEventListener('ended', function() {
+                    musicplayer12.currentTime = 0;
+                    musicplayer12.play();
+                });
+            </script>
+        </details>
+    </details>
+
+    <h1>
+        <div class="a">————————————————————————</div>
+    </h1>
+    <h1 class="a">拜拜</h1>
+    <div class="b">ZZCM(16jz):E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 SM:E698AFE6989FE6989FE4BA8EE784B6E784B6E59180 12345wjsxx
+    </div>
+</body>
+
+</html>
